@@ -10,7 +10,7 @@
 	<button id="senddisc">Desconectar</button>
 </body>
 <script>
-	var socket = io.connect("http://localhost:3000/canal");
+	var socket = io.connect("/canal");
 	socket.on("news", function(data) {
 		socket.emit("pong");
 		console.log(data);
